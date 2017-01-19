@@ -1,1 +1,45 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<title>Teste</title>
+		<meta charset="UTF-8">
 
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		
+		<script src="js/main.js"></script>
+		<script src="js/controllers/manage-controller.js"></script>
+		
+		<script src="lib/angular-1.0.1.js"></script>
+		
+	</head>
+	
+	<body>
+
+		<div class="jumbotron center-block">
+			<div class="container">
+				<h3>Manage</h3>
+			</div>
+		</div>	
+		
+		<div ng-app="manage" ng-controller="ManageController">
+
+			{{foto}}
+
+		<div>
+
+		
+		<script>
+			var myapp = angular.module('manage', []);
+
+			myapp.controller('ManageController', function($scope) {
+				$scope.foto = 'Life';
+			});
+		</script>
+		
+	
+	</body>
+
+</html>
